@@ -12,14 +12,14 @@ const BottomLoadingComponent = () => {
     const handleScroll = () => {
       const rect = loadingElement.current?.getBoundingClientRect();
       
-      if (rect?.top && rect?.top <= window.innerHeight) {
+      if (rect?.top && rect?.top <= window.innerHeight + 800) {
         if (allowFetch && images) {
           allowFetch = false;
           getImages(images[searchValue].pageIndex + 1, searchValue);
         }
       }
 
-      if (rect?.top && rect?.top >= window.innerHeight + 200) {
+      if (rect?.top && rect?.top >= window.innerHeight + 1000) {
         allowFetch = true;
       }
     };

@@ -25,6 +25,7 @@ const DebounceInput: React.FC<Props> = ({ onInput }) => {
 
   return (
     <input
+      className="search-inp"
       type="text"
       value={value}
       onChange={handleChange}

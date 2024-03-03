@@ -28,11 +28,29 @@ const History = () => {
         ) : (
           imageCategoryValues.filter(value => value.length > 0).map((value) => {
             return (
-              <li key={value}>
+              <li
+               style={
+                  {
+                    display: "flex",
+                    flexWrap: "wrap",
+                    listStyle: "none"
+                  }
+               }
+               key={value}>
                 <button
                   style={{
                     border:
                       imageCategoryValue === value ? "1px dashed red" : "",
+                      width: 90,
+                      height: 40,
+                      padding: 10,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize:17,
+                      marginBottom: 20,
+                      cursor: "pointer",
+
                   }}
                   onClick={() => setImageCategoryValue(value)}
                 >

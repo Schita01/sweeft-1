@@ -1,6 +1,6 @@
 import { ModalContextprops, useModalContext } from "../context/ModalContext";
 import { Img } from "../models/images";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
 
 type Props = {
   images: Img[] | null;

@@ -7,6 +7,8 @@ type Props = {
   imagesError: null | string;
 };
 
+// ss
+
 const ImageGallery = ({ images, imagesError }: Props) => {
   // Error case on specific search value
   const { setModalIsopen, setModalImageId, setModalImage } =

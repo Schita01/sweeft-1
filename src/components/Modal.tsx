@@ -43,10 +43,10 @@ const Modal = () => {
       // onClick={closeModal}
     >
       <div className="modal-content">
-        <p>Modal</p>
+      <button className="modal-delete-btn" onClick={closeModal}>X</button>
         {modalImage && (
           <img
-            style={{ maxHeight: 300, maxWidth: 400, objectFit: "cover" }}
+            className="modal-img"
             src={modalImage}
             alt=""
           />
@@ -73,14 +73,7 @@ const Modal = () => {
             </ul>
           </>
         )}
-        <button style={{
-          width: 20,
-          height:20,
-          background: "red",
-          color: "white",
-          border: "none",
-          cursor: "pointer"
-        }} onClick={closeModal}>X</button>
+        
       </div>
     </div>
   );
